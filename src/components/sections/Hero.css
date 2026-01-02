@@ -1,0 +1,179 @@
+.hero-avant {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #020617;
+}
+
+/* The Cyber-Andean Background */
+.hero-bg-layer {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url('../../assets/mountains.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  filter: brightness(0.8) contrast(1.1);
+  transform: scale(1.05); /* Slight zoom for parallax later if needed */
+}
+
+/* Gradient Overlay to fade bottom into content if needed */
+.hero-bg-layer::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 40%;
+  background: linear-gradient(to top, #020617 0%, transparent 100%);
+}
+
+.hero-content-avant {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-main-text {
+  margin-bottom: 2rem;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.hero-main-text h1 {
+  font-family: var(--font-heading);
+  font-size: 11vw; /* Adjusted for longer text */
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Andean Gold Accent */
+.text-gold {
+  color: #fbbf24; /* Amber 400 */
+  background: linear-gradient(to bottom, #fcd34d, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.5));
+}
+
+.line-overflow {
+  overflow: hidden;
+  display: block;
+}
+
+.hero-subtitle {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
+  color: rgb(226, 232, 240);
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: rgba(15, 23, 42, 0.6);
+  padding: 0.5rem 1.5rem;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.hero-search-avant {
+  width: 100%;
+  max-width: 650px;
+}
+
+.glass-panel {
+  display: flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.6); /* Darker glass for contrast against snow */
+  border: 1px solid rgba(56, 189, 248, 0.3); /* Cyan border */
+  padding: 1.25rem 2rem;
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  gap: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel:hover {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+}
+
+.glass-panel input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  width: 100%;
+  outline: none;
+  font-weight: 500;
+}
+
+.search-btn-icon {
+  background: var(--primary-600);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.search-btn-icon:hover {
+  background: var(--primary-500);
+  transform: scale(1.05);
+}
+
+/* Floating Stats */
+.stat-card {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  z-index: 5;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #38bdf8; /* Cyan */
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.st1 { top: 15%; left: 5%; }
+.st2 { top: 25%; right: 5%; }
+.st3 { bottom: 15%; left: 10%; }
+
+@media (max-width: 768px) {
+  .hero-main-text h1 {
+    font-size: 16vw;
+  }
+  .stat-card {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.services {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.services-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: var(--slate-900);
+  margin-bottom: 1rem;
+}
+
+.services-description {
+  color: var(--slate-600);
+  font-size: 1.125rem;
+}
