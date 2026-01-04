@@ -1,4 +1,4 @@
-# 🏔️ Chambea Huaraz
+#  Chambea Huaraz
 
 > **Conectando Talento con Oportunidades en el Callejón de Huaylas.**
 
@@ -9,21 +9,21 @@
 
 ---
 
-## 🌟 Características Principales
+##  Características Principales
 
-### 🎯 Experiencia "Zero Fricción"
+###  Experiencia "Zero Fricción"
 
 - **Diseño Glassmorphism**: Interfaz moderna, limpia y responsiva que inspira confianza.
 - **Navegación Intuitiva**: Flujos de usuario optimizados para postular o publicar en menos de 3 clics.
 
-### 🔐 Seguridad y Roles
+###  Seguridad y Roles
 
 - **Autenticación JWT Robusta**: Protección de rutas y persistencia de sesión segura.
 - **Roles Diferenciados**:
   - **Empresas**: Panel de control para gestionar ofertas, ver métricas y filtrar candidatos.
   - **Trabajadores**: Dashboard personal para seguimiento de postulaciones y perfil profesional.
 
-### 🚀 Funcionalidades Core
+###  Funcionalidades Core
 
 - **Publicación de Ofertas**: Formulario inteligente con validación y asignación automática de imágenes por categoría.
 - **Postulación en un Clic**: Sistema interno de aplicaciones (adiós al "envíame un inbox").
@@ -31,7 +31,7 @@
 
 ---
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 La arquitectura sigue los principios de separación de preocupaciones, escalabilidad y mantenibilidad.
 
@@ -53,7 +53,7 @@ La arquitectura sigue los principios de separación de preocupaciones, escalabil
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```bash
 Chambea-Huaraz/
@@ -74,7 +74,7 @@ Chambea-Huaraz/
 
 ---
 
-## 🚀 Instalación y Despliegue Local
+##  Instalación y Despliegue Local
 
 Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local.
 
@@ -123,7 +123,7 @@ npm run dev
 
 ---
 
-## 🛣️ Roadmap
+##  Roadmap
 
 - [x] MVP Core (Auth, Jobs, Applications).
 - [ ] **Geolocalización Real**: Integración con Google Maps/Mapbox para ubicación precisa de chambas.
@@ -133,15 +133,14 @@ npm run dev
 
 ---
 
-## 🤝 Contribución
+##  Contribución
 
 Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir lo que te gustaría cambiar o forkear el repositorio y enviar un Pull Request.
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
 ---
 
-_Desarrollado con ❤️ para Huaraz._
-"# ChambeaFacil" 
+
