@@ -1,30 +1,34 @@
 <div align="center">
+  <img src="src/assets/hero_bg.png" alt="ChambeaFacil Hero" width="100%" />
   <h1 align="center">CHAMBEAFACIL</h1>
   <h3 align="center">Plataforma Integral de Gestión y Empleo Hiper-local</h3>
   <p align="center">
     Una solución robusta y moderna para conectar talento con oportunidades en el Callejón de Huaylas.
     <br />
-    <a href="#"><strong>Ver Demo »</strong></a>
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL"><strong>Explorar los Docs »</strong></a>
     <br />
     <br />
-    <a href="#">Reportar Bug</a>
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/issues">Reportar Bug</a>
     ·
-    <a href="#">Solicitar Feature</a>
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/issues">Solicitar Feature</a>
   </p>
 
   <!-- Badges -->
   <p align="center">
-    <a href="#">
-      <img src="https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge" alt="Status Active">
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/bmontes93/CHAMBEAFACIL?style=for-the-badge" alt="Contributors">
     </a>
-    <a href="#">
-      <img src="https://img.shields.io/badge/ISSUES-0%20OPEN-555555?style=for-the-badge" alt="Issues">
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/network/members">
+      <img src="https://img.shields.io/github/forks/bmontes93/CHAMBEAFACIL?style=for-the-badge" alt="Forks">
     </a>
-    <a href="#">
-      <img src="https://img.shields.io/badge/PULL%20REQUESTS-0%20OPEN-555555?style=for-the-badge" alt="Pull Requests">
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/stargazers">
+      <img src="https://img.shields.io/github/stars/bmontes93/CHAMBEAFACIL?style=for-the-badge" alt="Stars">
     </a>
-    <a href="#">
-      <img src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge" alt="License MIT">
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/issues">
+      <img src="https://img.shields.io/github/issues/bmontes93/CHAMBEAFACIL?style=for-the-badge" alt="Issues">
+    </a>
+    <a href="https://github.com/bmontes93/CHAMBEAFACIL/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/bmontes93/CHAMBEAFACIL?style=for-the-badge" alt="License">
     </a>
   </p>
 </div>
