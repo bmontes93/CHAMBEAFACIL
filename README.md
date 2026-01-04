@@ -1,146 +1,150 @@
-#  Chambea Huaraz
+<div align="center">
+  <h1 align="center">CHAMBEAFACIL</h1>
+  <h3 align="center">Plataforma Integral de Gestión y Empleo Hiper-local</h3>
+  <p align="center">
+    Una solución robusta y moderna para conectar talento con oportunidades en el Callejón de Huaylas.
+    <br />
+    <a href="#"><strong>Ver Demo »</strong></a>
+    <br />
+    <br />
+    <a href="#">Reportar Bug</a>
+    ·
+    <a href="#">Solicitar Feature</a>
+  </p>
 
-> **Conectando Talento con Oportunidades en el Callejón de Huaylas.**
+  <!-- Badges -->
+  <p align="center">
+    <a href="#">
+      <img src="https://img.shields.io/badge/STATUS-ACTIVE-brightgreen?style=for-the-badge" alt="Status Active">
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/ISSUES-0%20OPEN-555555?style=for-the-badge" alt="Issues">
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/PULL%20REQUESTS-0%20OPEN-555555?style=for-the-badge" alt="Pull Requests">
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge" alt="License MIT">
+    </a>
+  </p>
+</div>
 
-![Project Status](https://img.shields.io/badge/Status-MVP_Ready-success?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-PERN%20Stack-blue?style=for-the-badge)
+<details>
+  <summary>Tabla de Contenidos</summary>
+  <ol>
+    <li><a href="#sobre-el-proyecto">Sobre el Proyecto</a></li>
+    <li><a href="#tecnologías">Tecnologías</a></li>
+    <li>
+      <a href="#instalación-y-despliegue">Instalación y Despliegue</a>
+      <ul>
+        <li><a href="#configuración-backend">Configuración Backend</a></li>
+        <li><a href="#configuración-frontend">Configuración Frontend</a></li>
+      </ul>
+    </li>
+    <li><a href="#licencia">Licencia</a></li>
+  </ol>
+</details>
 
-**Chambea Huaraz** es una plataforma de empleo hiper-local diseñada específicamente para la realidad de Huaraz y el Callejón de Huaylas. A diferencia de las bolsas de trabajo genéricas, nos enfocamos en reducir la fricción entre el empleador local y el talento operativo/profesional, ofreciendo una experiencia de usuario premium, rápida y segura.
+<br />
 
----
+## Sobre el Proyecto
 
-##  Características Principales
+**ChambeaFacil** is a hyper-local employment platform designed to bridge the gap between local employers and operational or professional talent. The application minimizes friction in the hiring process through a streamlined user experience, tailored specifically for the regional market dynamics.
 
-###  Experiencia "Zero Fricción"
+The platform facilitates two primary user roles:
 
-- **Diseño Glassmorphism**: Interfaz moderna, limpia y responsiva que inspira confianza.
-- **Navegación Intuitiva**: Flujos de usuario optimizados para postular o publicar en menos de 3 clics.
+- **Companies**: Capabilities include job posting management, candidate filtering, and performance metrics analysis.
+- **Workers**: Features include a personal dashboard for application tracking, profile management, and direct job application submission.
 
-###  Seguridad y Roles
+Key architectural highlights:
 
-- **Autenticación JWT Robusta**: Protección de rutas y persistencia de sesión segura.
-- **Roles Diferenciados**:
-  - **Empresas**: Panel de control para gestionar ofertas, ver métricas y filtrar candidatos.
-  - **Trabajadores**: Dashboard personal para seguimiento de postulaciones y perfil profesional.
+- **Zero Friction UX**: Optimized workflows for rapid job posting and application.
+- **Secure Authentication**: Robust JWT-based session management and role-based route protection.
+- **Scalable Architecture**: Built on the PERN stack principles with clean separation of concerns.
 
-###  Funcionalidades Core
+## Tecnologías
 
-- **Publicación de Ofertas**: Formulario inteligente con validación y asignación automática de imágenes por categoría.
-- **Postulación en un Clic**: Sistema interno de aplicaciones (adiós al "envíame un inbox").
-- **Dashboards en Tiempo Real**: Métricas de rendimiento para empresas y estado de postulaciones para trabajadores.
+The architecture follows strict separation of concerns, ensuring scalability and maintainability.
 
----
+### Client (Frontend)
 
-##  Stack Tecnológico
+- **Framework**: React (v19) with Vite for high-performance tooling.
+- **Styling**: Modern Vanilla CSS with CSS Variables for theming; Glassmorphism design language.
+- **State/Routing**: React Router DOM (v7) for client-side routing.
+- **Animations**: Framer Motion for UI micro-interactions.
+- **Icons**: Lucide React.
 
-La arquitectura sigue los principios de separación de preocupaciones, escalabilidad y mantenibilidad.
+### Server (Backend)
 
-### Frontend (Client)
+- **Runtime**: Node.js.
+- **Framework**: Express.js implementing RESTful API patterns.
+- **Database/ORM**: Prisma ORM utilizing SQLite for development (migratable to PostgreSQL).
+- **Security**: Bcryptjs for password hashing; JSON Web Tokens (JWT) for stateless authentication.
 
-- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/) (Build ultra-rápido).
-- **Estilos**: Vanilla CSS moderno con Variables (Custom Properties) para consistencia de diseño e implementación de Glassmorphism.
-- **Animaciones**: `framer-motion` para micro-interacciones fluidas.
-- **Iconografía**: `lucide-react`.
-- **Enrutamiento**: `react-router-dom` con protección de rutas (Private Routes).
-
-### Backend (Server)
-
-- **Runtime**: [Node.js](https://nodejs.org/).
-- **Framework**: [Express.js](https://expressjs.com/) (Arquitectura RESTful).
-- **ORM**: [Prisma](https://www.prisma.io/) (Type-safe database access).
-- **Base de Datos**: SQLite (Entorno Desarrollo) / Fácil migración a PostgreSQL.
-- **Seguridad**: `bcryptjs` (Hashing de contraseñas), `jsonwebtoken` (Auth).
-
----
-
-##  Estructura del Proyecto
-
-```bash
-Chambea-Huaraz/
-├── src/                # Frontend Source
-│   ├── assets/         # Imágenes y recursos estáticos
-│   ├── components/     # Componentes reutilizables (UI Kit)
-│   ├── pages/          # Vistas principales (Router pages)
-│   └── utils/          # Helpers y lógica compartida
-├── server/             # Backend Source
-│   ├── prisma/         # Schema y migraciones de BD
-│   ├── src/
-│   │   ├── controllers/ # Lógica de negocio
-│   │   ├── middleware/  # Auth y validaciones
-│   │   └── routes/      # Definición de endpoints API
-│   └── app.js          # Entry point del servidor
-└── ...
-```
-
----
-
-##  Instalación y Despliegue Local
-
-Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local.
+## Instalación y Despliegue
 
 ### Prerrequisitos
 
-- Node.js (v18 o superior)
-- NPM o Yarn
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-### 1. Clonar el repositorio
+### Configuración Backend
 
-```bash
-git clone https://github.com/bmontes93/Chambea-Huaraz.git
-cd Chambea-Huaraz
-```
+1. Navigate to the server directory:
 
-### 2. Configurar el Backend (Servidor)
+   ```bash
+   cd server
+   ```
 
-```bash
-cd server
-npm install
+2. Install dependencies:
 
-# Configurar variables de entorno (Crear archivo .env en /server)
-echo "DATABASE_URL=\"file:./dev.db\"" > .env
-echo "JWT_SECRET=\"tu_super_secreto_seguro\"" >> .env
+   ```bash
+   npm install
+   ```
 
-# Migrar la base de datos
-npx prisma migrate dev --name init
+3. Configure environment variables:
+   Create a `.env` file in the `server` directory with the following variables:
 
-# Iniciar servidor (Puerto 3000)
-npm run dev
-```
+   ```env
+   DATABASE_URL="file:./dev.db"
+   JWT_SECRET="your_secure_jwt_secret_key"
+   ```
 
-### 3. Configurar el Frontend (Cliente)
+4. Initialize the database:
 
-En una nueva terminal, regresa a la raíz y configura el cliente:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
 
-```bash
-cd ..  # Volver a raíz si estabas en server
-npm install
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The API will be available at `http://localhost:3000`.
 
-# Iniciar cliente (Vite)
-npm run dev
-```
+### Configuración Frontend
 
-¡Listo! La aplicación estará corriendo en `http://localhost:5173`.
+1. Open a new terminal and navigate to the project root:
 
----
+   ```bash
+   cd .. # If currently in server directory
+   ```
 
-##  Roadmap
+2. Install dependencies:
 
-- [x] MVP Core (Auth, Jobs, Applications).
-- [ ] **Geolocalización Real**: Integración con Google Maps/Mapbox para ubicación precisa de chambas.
-- [ ] **Login Social**: OAuth con Google y Facebook.
-- [ ] **Notificaciones**: Alertas por Email/WhatsApp (Twilio/SendGrid).
-- [ ] **Pagos**: Integración con Yape/Plin para destacar ofertas premium.
+   ```bash
+   npm install
+   ```
 
----
+3. Start the development server:
 
-##  Contribución
+   ```bash
+   npm run dev
+   ```
 
-Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir lo que te gustaría cambiar o forkear el repositorio y enviar un Pull Request.
+4. Access the application:
+   The client will run on `http://localhost:5173`.
 
-##  Licencia
+## Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
----
-
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
